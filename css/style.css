@@ -7,6 +7,10 @@ li{
 	font-family: 'Quicksand', sans-serif;
 }
 
+li:hover{
+	cursor: pointer;
+}
+
 .padContent li {
 	text-transform: uppercase;
 	font-size: 24px;
@@ -14,15 +18,21 @@ li{
 
 }
 
+.show-line {
+	text-decoration: line-through;
+}
+
+.num-items{
+}
+
 .trash-can {
-float: right;
-margin-top: 3px;
-margin-right: 5px;
+	float: right;
+	margin-top: 3px;
+	margin-right: 35px;
 }
 
 .padContent li span{
-margin-left: 20px;
-
+	margin-left: 20px;
 }
 
 input[type="image"]{
@@ -44,7 +54,7 @@ section.main{
 	linear-gradient(90deg, transparent 79px, #abced4 79px, #abced4 81px, transparent 81px),
 	linear-gradient(#eee .1em, transparent .1em);
 	background-size: 100% 1.2em;
-	width: 600px;
+	width: 400px;
 	height: 800px;
 }
 
@@ -60,7 +70,7 @@ section.main{
 
 .padTitle{
 	background: #2D3743;
-	width: 600px;
+	width: 400px;
 	height: 60px;
 	margin: 0 auto;
 	position: relative;
