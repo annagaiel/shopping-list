@@ -13,13 +13,14 @@ $('.btn-add').on('click', function(){
 
  var res = theItemValue.split(":",2);
 
+//http://webdesign.about.com/od/beginningtutorials/f/blfaqwhitespace.htm
+ var comboNameNumber = res[0] + "&nbsp;&nbsp;&nbsp;" + res[1];
 
  if(theItemValue!='' && res.length==2 && $.isNumeric(res[1])){
 	 //prepend() method inserts new HTML into the beginning of the selected HTML element.
 	 $('.padList').prepend('<li>'+
 	 	'<input type="image" class="cross-out" src="img/pencil.png" alt="cross out '+theItemValue+'">'+ 
-	 	'<span>'+res[0]+'</span>'+
-	 	'<span class="num-items">'+res[1]+'</span>'+
+	 	'<span>'+comboNameNumber+'</span>'+
 	 	'<input type="image" class="trash-can" src="img/trash.png" alt="delete '+theItemValue+'">'+
 	 	'</li>');
 	  
@@ -76,4 +77,3 @@ $(document).on("focusout", "input.trash-can", function (e) {
 });
 
 });//end document
-
