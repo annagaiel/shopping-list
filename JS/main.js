@@ -13,7 +13,7 @@ $('.btn-add').on('click', function(){
 
  var res = theItemValue.split(":",2);
 
-//http://webdesign.about.com/od/beginningtutorials/f/blfaqwhitespace.htm
+//http://webdesign.about.com/od/beginningtutorials/f/blfaqwhitespace.html
  var comboNameNumber = res[0] + "&nbsp;&nbsp;&nbsp;" + res[1];
 
  if(theItemValue!='' && res.length==2 && $.isNumeric(res[1])){
